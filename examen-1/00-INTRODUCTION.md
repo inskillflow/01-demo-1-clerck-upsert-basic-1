@@ -24,7 +24,7 @@ Ce cours explique le fonctionnement d'une application moderne avec authentificat
 
 **Module 4 : Synchronisation Intelligente** - Stratégie upsert post-login
 
-**Module 5 : Quiz et Exercices** - Validation des acquis (fichiers 05, 06, 07)
+**Module 5 : Quiz (obligatoire) et Exercices (optionnel)** - Validation des acquis
 
 ## Prérequis
 

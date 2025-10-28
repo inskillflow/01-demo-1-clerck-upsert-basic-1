@@ -5,7 +5,7 @@
 - 20 questions à choix multiples
 - Durée estimée : 30 minutes
 - Cochez votre réponse pour chaque question
-- Les réponses sont dans le fichier 07-QUIZ-REPONSES.md
+- Les réponses sont dans le fichier 07-QUIZ-REPONSES(OBLIGATOIRE).md
 
 ---
 
@@ -185,5 +185,5 @@ Pour tracker les inscriptions en temps réel, quel(s) événement(s) webhook uti
 
 ---
 
-**Voir le fichier 07-QUIZ-REPONSES.md pour les corrections**
+**Voir le fichier 07-QUIZ-REPONSES(OBLIGATOIRE).md pour les corrections**
 

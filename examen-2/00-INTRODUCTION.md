@@ -25,7 +25,7 @@ Ce cours explore l'architecture de synchronisation par webhooks entre Clerk et v
 
 **Module 4 : Scénarios Réels** - Cas d'usage concrets et exemples
 
-**Module 5 : Quiz et Exercices** - Validation des acquis (fichiers 05, 06, 07, 08, 09)
+**Module 5 : Quiz (obligatoire) et Exercices (optionnel)** - Validation des acquis
 
 ## Prérequis
 

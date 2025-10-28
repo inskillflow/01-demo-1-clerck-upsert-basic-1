@@ -5,7 +5,7 @@
 - 5 exercices à réaliser
 - Durée estimée : 3-4 heures
 - Rédigez vos réponses dans un document séparé
-- Consultez 11-EXERCICES-SOLUTIONS.md après avoir terminé
+- Consultez 11-EXERCICES-SOLUTIONS(OPTIONNEL).md après avoir terminé
 
 ---
 
@@ -235,5 +235,5 @@ Concevez une architecture résiliente qui garantit qu'aucun événement n'est pe
 
 ## Soumission
 
-Rédigez vos réponses dans un document structuré et consultez 11-EXERCICES-SOLUTIONS.md pour comparer avec les solutions proposées.
+Rédigez vos réponses dans un document structuré et consultez 11-EXERCICES-SOLUTIONS(OPTIONNEL).md pour comparer avec les solutions proposées.
 

@@ -5,7 +5,7 @@
 - 5 exercices à réaliser
 - Durée estimée : 2-3 heures
 - Rédigez vos réponses dans un document séparé
-- Consultez 08-EXERCICES-SOLUTIONS.md après avoir terminé
+- Consultez 08-EXERCICES-SOLUTIONS(OPTIONNEL).md après avoir terminé
 
 ---
 
@@ -278,5 +278,5 @@ Test 1 : [Type] Synchronisation utilisateur
 
 ## Soumission
 
-Rédigez vos réponses dans un document structuré et consultez 08-EXERCICES-SOLUTIONS.md pour comparer avec les solutions proposées.
+Rédigez vos réponses dans un document structuré et consultez 08-EXERCICES-SOLUTIONS(OPTIONNEL).md pour comparer avec les solutions proposées.
 

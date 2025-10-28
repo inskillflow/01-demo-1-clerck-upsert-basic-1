@@ -5,7 +5,7 @@
 - 20 questions à choix multiples
 - Durée estimée : 30 minutes
 - Cochez votre réponse pour chaque question
-- Les réponses sont dans le fichier 06-QUIZ-REPONSES.md
+- Les réponses sont dans le fichier 06-QUIZ-REPONSES(OBLIGATOIRE).md
 
 ---
 
@@ -189,5 +189,5 @@ Que signifie la syntaxe `[[...rest]]` dans les routes Clerk (`/sign-in/[[...rest
 
 ---
 
-**Voir le fichier 06-QUIZ-REPONSES.md pour les corrections**
+**Voir le fichier 06-QUIZ-REPONSES(OBLIGATOIRE).md pour les corrections**
 

@@ -103,29 +103,29 @@ Ce cours complet explique l'architecture de synchronisation par webhooks entre C
 - Tunnel ngrok vs communication directe
 - Endpoints dev et prod séparés
 
-### [06 - Quiz Webhooks Questions](./06-QUIZ-QUESTIONS.md)
+### [06 - Quiz Webhooks Questions](./06-QUIZ-QUESTIONS(OBLIGATOIRE).md)
 **Durée : 30 minutes**
 - 20 questions à choix multiples sur les webhooks
 - 4 sections : Concepts, Clerk, Implémentation, Scénarios
 - Format sans les réponses
 
-### [07 - Quiz Webhooks Réponses](./07-QUIZ-REPONSES.md)
+### [07 - Quiz Webhooks Réponses](./07-QUIZ-REPONSES(OBLIGATOIRE).md)
 - Corrections détaillées du quiz principal
 - Explications pour chaque question
 - Barème de notation
 
-### [08 - Quiz Production Questions](./08-QUIZ-PRODUCTION-QUESTIONS.md)
+### [08 - Quiz Production Questions](./08-QUIZ-PRODUCTION-QUESTIONS(OBLIGATOIRE).md)
 **Durée : 25 minutes**
 - 20 questions sur Production vs Développement
 - Focus sur ngrok, déploiement, et configuration
 - Format sans les réponses
 
-### [09 - Quiz Production Réponses](./09-QUIZ-PRODUCTION-REPONSES.md)
+### [09 - Quiz Production Réponses](./09-QUIZ-PRODUCTION-REPONSES(OBLIGATOIRE).md)
 - Corrections du quiz production
 - Règle d'or : localhost = ngrok / URL publique = pas ngrok
 - Barème de notation
 
-### [10 - Exercices](./10-EXERCICES.md)
+### [10 - Exercices](./10-EXERCICES(OPTIONNEL).md)
 **Durée : 3-4 heures**
 - 5 exercices pratiques complexes
 - 3 questions ouvertes de réflexion

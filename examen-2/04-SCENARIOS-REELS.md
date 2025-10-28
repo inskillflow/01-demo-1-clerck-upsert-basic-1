@@ -543,3 +543,5 @@ Cette approche minimise la complexité initiale tout en permettant une évolutio
 
 Passez au Module 5 : [05-PRODUCTION-VS-DEVELOPPEMENT.md](./05-PRODUCTION-VS-DEVELOPPEMENT.md)
 
+Quiz : [06-QUIZ-QUESTIONS(OBLIGATOIRE).md](./06-QUIZ-QUESTIONS(OBLIGATOIRE).md)
+

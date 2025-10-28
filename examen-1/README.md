@@ -20,11 +20,11 @@ Ce dossier contient un cours complet et pédagogique sur l'architecture d'une ap
 
 ### Évaluation
 
-**[05-QUIZ-ET-EXERCICES.md](./05-QUIZ-ET-EXERCICES.md)** - Quiz complet avec :
-- 20 questions à choix multiples
-- 5 exercices pratiques
-- 5 questions ouvertes de réflexion
-- Correction et barème détaillés
+**[05-QUIZ-QUESTIONS(OBLIGATOIRE).md](./05-QUIZ-QUESTIONS(OBLIGATOIRE).md)** - 20 questions à choix multiples
+
+**[06-QUIZ-REPONSES(OBLIGATOIRE).md](./06-QUIZ-REPONSES(OBLIGATOIRE).md)** - Corrections avec explications
+
+**[07-EXERCICES(OPTIONNEL).md](./07-EXERCICES(OPTIONNEL).md)** - 5 exercices pratiques + questions ouvertes
 
 ### Navigation
 

@@ -18,11 +18,19 @@ Ce cours complet et pédagogique explique l'architecture de synchronisation par 
 
 **[04-SCENARIOS-REELS.md](./04-SCENARIOS-REELS.md)** - Cas d'usage concrets (emails, RGPD, analytics)
 
-**[05-QUIZ-ET-EXERCICES.md](./05-QUIZ-ET-EXERCICES.md)** - Évaluation complète avec correction
+**[06-QUIZ-QUESTIONS(OBLIGATOIRE).md](./06-QUIZ-QUESTIONS(OBLIGATOIRE).md)** - 20 questions webhooks
 
-**[06-PRODUCTION-VS-DEVELOPPEMENT.md](./06-PRODUCTION-VS-DEVELOPPEMENT.md)** - Ngrok vs production, différences et stratégies
+**[07-QUIZ-REPONSES(OBLIGATOIRE).md](./07-QUIZ-REPONSES(OBLIGATOIRE).md)** - Corrections
 
-**[07-EXEMPLES-DEPLOIEMENT.md](./07-EXEMPLES-DEPLOIEMENT.md)** - Déploiement Vercel, Railway, VPS (sans ngrok)
+**[08-QUIZ-PRODUCTION-QUESTIONS(OBLIGATOIRE).md](./08-QUIZ-PRODUCTION-QUESTIONS(OBLIGATOIRE).md)** - 20 questions production
+
+**[09-QUIZ-PRODUCTION-REPONSES(OBLIGATOIRE).md](./09-QUIZ-PRODUCTION-REPONSES(OBLIGATOIRE).md)** - Corrections
+
+**[10-EXERCICES(OPTIONNEL).md](./10-EXERCICES(OPTIONNEL).md)** - 5 exercices pratiques
+
+**[05-PRODUCTION-VS-DEVELOPPEMENT.md](./05-PRODUCTION-VS-DEVELOPPEMENT.md)** - Ngrok vs production, différences et stratégies
+
+**[11-EXEMPLES-DEPLOIEMENT.md](./11-EXEMPLES-DEPLOIEMENT.md)** - Déploiement Vercel, Railway, VPS (sans ngrok)
 
 ### Navigation
 
