@@ -1,44 +1,34 @@
-// This is your Prisma schema file
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
   directUrl = env("DIRECT_URL")
-
 }
 
 model User {
-  id              String   @id @default(cuid())
-  clerkId         String   @unique
-  email           String   @unique
-  username        String?  @unique
-  firstName       String?
-  lastName        String?
-  imageUrl        String?
-  
-  // Champs métier professionnels
-  bio             String?  @db.Text
-  company         String?
-  jobTitle        String?
-  location        String?
-  website         String?
-  
-  // Social links
-  twitter         String?
-  linkedin        String?
-  github          String?
-  
-  // Preferences
-  emailNotifications Boolean @default(true)
-  theme           String  @default("light")
-  language        String  @default("fr")
-  
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  id                 String   @id @default(cuid())
+  clerkId            String   @unique
+  email              String   @unique
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  firstName          String?
+  imageUrl           String?
+  lastName           String?
+  username           String?  @unique
+  bio                String?
+  company            String?
+  emailNotifications Boolean  @default(true)
+  github             String?
+  jobTitle           String?
+  language           String   @default("fr")
+  linkedin           String?
+  location           String?
+  theme              String   @default("light")
+  twitter            String?
+  website            String?
 
   @@map("users")
 }
