@@ -90,39 +90,35 @@ Ce cours complet explique l'architecture de synchronisation par webhooks entre C
 - Analytics en temps réel
 - Intégrations (Slack, Mailchimp, etc.)
 
-### [05 - Quiz et Exercices](./05-QUIZ-ET-EXERCICES.md)
-**Durée : 2-3 heures**
-- Quiz de 20 questions (choix multiples)
-- 5 exercices pratiques
-- 5 questions ouvertes de réflexion
-- Correction et barème détaillés
+### [05 - Quiz Questions](./05-QUIZ-QUESTIONS.md)
+**Durée : 30 minutes**
+- 20 questions à choix multiples sur les webhooks
+- 4 sections : Concepts, Clerk, Implémentation, Scénarios
+- Format sans les réponses
 
-**Sections du quiz :**
-1. Concepts Webhooks (5 questions)
-2. Webhooks Clerk (5 questions)
-3. Implémentation (5 questions)
-4. Scénarios Avancés (5 questions)
+### [06 - Quiz Réponses](./06-QUIZ-REPONSES.md)
+- Corrections détaillées du quiz principal
+- Explications pour chaque question
+- Barème de notation
 
-### [06 - Production vs Développement](./06-PRODUCTION-VS-DEVELOPPEMENT.md)
-**Durée : 40 minutes**
-- La différence fondamentale
-- Développement local avec ngrok
-- Production sans ngrok
-- Configuration en développement
-- Configuration en production
-- Comparaison détaillée
-- Stratégie en deux environnements
-- Code adaptatif
-- Testing sans webhook réel
-- Checklist de migration
+### [07 - Quiz Production Questions](./07-QUIZ-PRODUCTION-QUESTIONS.md)
+**Durée : 25 minutes**
+- 20 questions sur Production vs Développement
+- Focus sur ngrok, déploiement, et configuration
+- Format sans les réponses
 
-**Concepts clés :**
-- localhost vs URL publique
-- Tunnel ngrok vs communication directe
-- Endpoints dev et prod séparés
-- Migration vers production
+### [08 - Quiz Production Réponses](./08-QUIZ-PRODUCTION-REPONSES.md)
+- Corrections du quiz production
+- Règle d'or : localhost = ngrok / URL publique = pas ngrok
+- Barème de notation
 
-### [07 - Exemples de Déploiement](./07-EXEMPLES-DEPLOIEMENT.md)
+### [09 - Exercices](./09-EXERCICES.md)
+**Durée : 3-4 heures**
+- 5 exercices pratiques complexes
+- 3 questions ouvertes de réflexion
+- Critères d'évaluation détaillés
+
+### [10 - Exemples de Déploiement](./10-EXEMPLES-DEPLOIEMENT.md)
 **Durée : 60 minutes**
 - Exemple complet sur Vercel (pas à pas)
 - Exemple avec Railway

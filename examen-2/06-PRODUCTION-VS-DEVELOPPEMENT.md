@@ -416,5 +416,5 @@ Une fois cette migration faite, vous n'aurez plus jamais besoin de ngrok pour ce
 
 ---
 
-Passez aux exemples concrets : [07-EXEMPLES-DEPLOIEMENT.md](./07-EXEMPLES-DEPLOIEMENT.md)
+Passez au Module 7 : [10-EXEMPLES-DEPLOIEMENT.md](./10-EXEMPLES-DEPLOIEMENT.md)
 

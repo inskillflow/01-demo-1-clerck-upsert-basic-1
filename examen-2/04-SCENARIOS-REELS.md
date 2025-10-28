@@ -541,5 +541,5 @@ Cette approche minimise la complexité initiale tout en permettant une évolutio
 
 ---
 
-Passez au Module 5 : [05-QUIZ-ET-EXERCICES.md](./05-QUIZ-ET-EXERCICES.md)
+Passez au Module 5 : [05-QUIZ-QUESTIONS.md](./05-QUIZ-QUESTIONS.md)
 

@@ -79,12 +79,22 @@ Ce cours complet explique l'architecture d'une application moderne avec authenti
 - Découplage id / clerkId
 - Route /welcome
 
-### [05 - Quiz et Exercices](./05-QUIZ-ET-EXERCICES.md)
-**Durée : 1-2 heures**
-- Quiz de 20 questions (choix multiples)
+### [05 - Quiz Questions](./05-QUIZ-QUESTIONS.md)
+**Durée : 30 minutes**
+- 20 questions à choix multiples
+- 5 sections thématiques
+- Format sans les réponses
+
+### [06 - Quiz Réponses](./06-QUIZ-REPONSES.md)
+- Corrections détaillées
+- Explications pour chaque question
+- Barème de notation
+
+### [07 - Exercices](./07-EXERCICES.md)
+**Durée : 2-3 heures**
 - 5 exercices pratiques
 - 5 questions ouvertes de réflexion
-- Correction et barème détaillés
+- Critères d'évaluation détaillés
 
 **Sections du quiz :**
 1. Concepts Fondamentaux (4 questions)

@@ -274,5 +274,5 @@ Appeler `syncUser()` plusieurs fois avec les mêmes données ne cause aucun prob
 
 ---
 
-Passez au Module 5 : [05-QUIZ-ET-EXERCICES.md](./05-QUIZ-ET-EXERCICES.md)
+Passez au Module 5 : [05-QUIZ-QUESTIONS.md](./05-QUIZ-QUESTIONS.md)
 
