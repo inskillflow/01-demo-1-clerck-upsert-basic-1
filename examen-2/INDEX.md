@@ -90,35 +90,48 @@ Ce cours complet explique l'architecture de synchronisation par webhooks entre C
 - Analytics en temps réel
 - Intégrations (Slack, Mailchimp, etc.)
 
-### [05 - Quiz Questions](./05-QUIZ-QUESTIONS.md)
+### [05 - Production vs Développement](./05-PRODUCTION-VS-DEVELOPPEMENT.md)
+**Durée : 40 minutes**
+- La différence fondamentale
+- Développement local avec ngrok
+- Production sans ngrok
+- Stratégie en deux environnements
+- Checklist de migration
+
+**Concepts clés :**
+- localhost vs URL publique
+- Tunnel ngrok vs communication directe
+- Endpoints dev et prod séparés
+
+### [06 - Quiz Webhooks Questions](./06-QUIZ-QUESTIONS.md)
 **Durée : 30 minutes**
 - 20 questions à choix multiples sur les webhooks
 - 4 sections : Concepts, Clerk, Implémentation, Scénarios
 - Format sans les réponses
 
-### [06 - Quiz Réponses](./06-QUIZ-REPONSES.md)
+### [07 - Quiz Webhooks Réponses](./07-QUIZ-REPONSES.md)
 - Corrections détaillées du quiz principal
 - Explications pour chaque question
 - Barème de notation
 
-### [07 - Quiz Production Questions](./07-QUIZ-PRODUCTION-QUESTIONS.md)
+### [08 - Quiz Production Questions](./08-QUIZ-PRODUCTION-QUESTIONS.md)
 **Durée : 25 minutes**
 - 20 questions sur Production vs Développement
 - Focus sur ngrok, déploiement, et configuration
 - Format sans les réponses
 
-### [08 - Quiz Production Réponses](./08-QUIZ-PRODUCTION-REPONSES.md)
+### [09 - Quiz Production Réponses](./09-QUIZ-PRODUCTION-REPONSES.md)
 - Corrections du quiz production
 - Règle d'or : localhost = ngrok / URL publique = pas ngrok
 - Barème de notation
 
-### [09 - Exercices](./09-EXERCICES.md)
+### [10 - Exercices](./10-EXERCICES.md)
 **Durée : 3-4 heures**
 - 5 exercices pratiques complexes
 - 3 questions ouvertes de réflexion
 - Critères d'évaluation détaillés
 
-### [10 - Exemples de Déploiement](./10-EXEMPLES-DEPLOIEMENT.md)
+### [11 - Exemples de Déploiement](./11-EXEMPLES-DEPLOIEMENT.md)
 **Durée : 60 minutes**
 - Exemple complet sur Vercel (pas à pas)
 - Exemple avec Railway

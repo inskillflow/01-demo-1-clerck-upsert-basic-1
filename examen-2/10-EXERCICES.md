@@ -5,7 +5,7 @@
 - 5 exercices à réaliser
 - Durée estimée : 3-4 heures
 - Rédigez vos réponses dans un document séparé
-- Consultez 10-EXERCICES-SOLUTIONS.md après avoir terminé
+- Consultez 11-EXERCICES-SOLUTIONS.md après avoir terminé
 
 ---
 
@@ -95,21 +95,21 @@ Vous avez une application en production qui utilise l'approche upsert. Décrivez
 
 **Décrivez pour chaque phase :**
 
-### Phase 1 : Préparation (15 points)
+### Phase 1 : Préparation
 - Configuration nécessaire dans Clerk Dashboard
 - Installation de dépendances et modifications du code
 - Variables d'environnement à ajouter
 - Comment tester en parallèle sans affecter la production
 - Plan de tests
 
-### Phase 2 : Déploiement progressif (15 points)
+### Phase 2 : Déploiement progressif
 - Stratégie de feature flag ou de basculement progressif
 - Comment gérer les utilisateurs existants
 - Période de transition (webhooks + upsert en backup)
 - Métriques à surveiller pour détecter les problèmes
 - Logs et monitoring
 
-### Phase 3 : Finalisation (10 points)
+### Phase 3 : Finalisation
 - Comment et quand supprimer le code upsert
 - Nettoyage de la route /welcome
 - Documentation à mettre à jour
@@ -235,5 +235,5 @@ Concevez une architecture résiliente qui garantit qu'aucun événement n'est pe
 
 ## Soumission
 
-Rédigez vos réponses dans un document structuré et consultez 10-EXERCICES-SOLUTIONS.md pour comparer avec les solutions proposées.
+Rédigez vos réponses dans un document structuré et consultez 11-EXERCICES-SOLUTIONS.md pour comparer avec les solutions proposées.
 

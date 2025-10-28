@@ -1,4 +1,4 @@
-# Module 6 : Production vs Développement Local
+# Module 5 : Production vs Développement Local
 
 ## La différence fondamentale
 
@@ -95,7 +95,7 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
 
 ### Étape 3 : Configurer Clerk Dashboard
 
-1. Allez sur [https://dashboard.clerk.com](https://dashboard.clerk.com)
+1. Allez sur https://dashboard.clerk.com
 2. Sélectionnez votre application
 3. Menu "Webhooks"
 4. Cliquez "Add Endpoint"
@@ -131,116 +131,31 @@ Une fois déployé, la configuration est beaucoup plus simple et permanente.
 **Étape 1 : Déployer sur Vercel**
 
 ```bash
-# Installer Vercel CLI
-npm install -g vercel
-
-# Se connecter
-vercel login
-
-# Déployer
 vercel --prod
 ```
 
-Vercel vous donne une URL comme `https://mon-app.vercel.app` ou votre domaine personnalisé `https://monsite.com`.
+Vercel vous donne une URL comme `https://mon-app.vercel.app`.
 
-**Étape 2 : Configurer les variables d'environnement sur Vercel**
-
-Dans le dashboard Vercel :
-1. Projet → Settings → Environment Variables
-2. Ajouter toutes vos variables :
-   - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
-   - `CLERK_SECRET_KEY`
-   - `DATABASE_URL`
-   - `CLERK_WEBHOOK_SECRET` (sera ajouté après configuration Clerk)
-
-**Étape 3 : Configurer Clerk Dashboard (une seule fois)**
+**Étape 2 : Configurer Clerk Dashboard (une seule fois)**
 
 1. Webhooks → Add Endpoint
 2. URL : `https://mon-app.vercel.app/api/webhooks/clerk`
 3. Événements : user.created, user.updated, user.deleted
 4. Copier le signing secret
 
-**Étape 4 : Ajouter le secret sur Vercel**
+**Étape 3 : Ajouter le secret sur Vercel**
 
-1. Retour sur Vercel dashboard
-2. Environment Variables → Add
-3. Key : `CLERK_WEBHOOK_SECRET`
-4. Value : `whsec_abc123def...`
-5. Save
+Vercel dashboard → Environment Variables → Add :
+- Key : `CLERK_WEBHOOK_SECRET`
+- Value : `whsec_prod_xyz789...`
 
-**Étape 5 : Redéployer**
+**Étape 4 : Redéployer**
 
 ```bash
 vercel --prod
 ```
 
-Ou simplement push sur GitHub si vous avez configuré le déploiement automatique.
-
-**C'est tout !** Votre configuration est permanente. Les webhooks fonctionnent maintenant automatiquement.
-
-### Exemple avec Railway
-
-**Déploiement :**
-
-1. Connecter votre repo GitHub sur [railway.app](https://railway.app)
-2. Railway détecte automatiquement Next.js
-3. Déploiement automatique
-
-Railway vous donne une URL comme `https://mon-app-production.up.railway.app`.
-
-**Configuration webhook :**
-
-Même processus que Vercel :
-- URL webhook : `https://mon-app-production.up.railway.app/api/webhooks/clerk`
-- Variables d'environnement dans Railway dashboard
-- Configuration permanente
-
-### Exemple avec Netlify
-
-**Déploiement :**
-
-```bash
-npm install -g netlify-cli
-netlify deploy --prod
-```
-
-URL fournie : `https://mon-app.netlify.app`
-
-**Configuration webhook :**
-- URL : `https://mon-app.netlify.app/api/webhooks/clerk`
-- Variables dans Netlify dashboard → Site settings → Environment variables
-
-### Exemple avec votre propre serveur (VPS)
-
-Si vous hébergez sur un VPS (DigitalOcean, Linode, AWS EC2, etc.) :
-
-**Configuration Nginx :**
-
-```nginx
-server {
-    listen 80;
-    server_name monsite.com;
-    
-    location / {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
-```
-
-**SSL avec Let's Encrypt :**
-
-```bash
-sudo certbot --nginx -d monsite.com
-```
-
-**URL webhook :** `https://monsite.com/api/webhooks/clerk`
-
-Pas besoin de ngrok car votre serveur a une IP publique et un nom de domaine.
+**C'est tout !** Configuration permanente, les webhooks fonctionnent automatiquement.
 
 ## Comparaison détaillée
 
@@ -309,77 +224,6 @@ Créez **deux endpoints webhook** dans Clerk :
 
 Avantage : Vous pouvez tester en dev sans affecter la production, et vous n'avez pas à changer l'URL production quand vous redémarrez ngrok.
 
-## Code adaptatif
-
-Votre code peut s'adapter automatiquement à l'environnement :
-
-```typescript
-// app/api/webhooks/clerk/route.ts
-export async function POST(req: Request) {
-  const WEBHOOK_SECRET = process.env.NODE_ENV === 'production'
-    ? process.env.CLERK_WEBHOOK_SECRET_PROD
-    : process.env.CLERK_WEBHOOK_SECRET_DEV
-  
-  // ... reste du code
-}
-```
-
-Variables d'environnement :
-
-```env
-# .env.local (développement)
-CLERK_WEBHOOK_SECRET_DEV=whsec_dev_abc123...
-
-# Vercel/Netlify (production)
-CLERK_WEBHOOK_SECRET_PROD=whsec_prod_xyz789...
-```
-
-## Testing sans webhook réel
-
-Pendant le développement, vous pouvez aussi tester sans recevoir de vrais webhooks :
-
-### Option 1 : Simuler localement
-
-```typescript
-// scripts/test-webhook.ts
-async function testWebhook() {
-  const payload = {
-    type: 'user.created',
-    data: {
-      id: 'user_test123',
-      email_addresses: [{ email_address: 'test@example.com' }],
-      first_name: 'Test',
-      last_name: 'User'
-    }
-  }
-
-  const response = await fetch('http://localhost:3000/api/webhooks/clerk', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  })
-
-  console.log(await response.json())
-}
-
-testWebhook()
-```
-
-Exécutez : `npx ts-node scripts/test-webhook.ts`
-
-**Attention :** Ce test ne vérifie pas la signature. Pour tester la signature, utilisez ngrok ou la fonctionnalité "Test" de Clerk Dashboard.
-
-### Option 2 : Clerk Dashboard "Send Example"
-
-Dans Clerk Dashboard, vous pouvez rejouer des webhooks manuellement :
-1. Webhooks → Votre endpoint
-2. Onglet "Testing"
-3. "Send Example Webhook"
-4. Choisir le type d'événement
-5. Cliquer "Send"
-
-Cela envoie un webhook réel avec une vraie signature, même en développement.
-
 ## Résumé : Ai-je besoin de ngrok ?
 
 **OUI, vous avez besoin de ngrok si :**
@@ -416,5 +260,5 @@ Une fois cette migration faite, vous n'aurez plus jamais besoin de ngrok pour ce
 
 ---
 
-Passez au Module 7 : [10-EXEMPLES-DEPLOIEMENT.md](./10-EXEMPLES-DEPLOIEMENT.md)
+Passez au Module 6 : [10-EXEMPLES-DEPLOIEMENT.md](./10-EXEMPLES-DEPLOIEMENT.md)
 

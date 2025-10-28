@@ -5,7 +5,7 @@
 - 20 questions à choix multiples
 - Durée estimée : 25 minutes
 - Cochez votre réponse pour chaque question
-- Les réponses sont dans le fichier 08-QUIZ-PRODUCTION-REPONSES.md
+- Les réponses sont dans le fichier 09-QUIZ-PRODUCTION-REPONSES.md
 
 ---
 
@@ -185,5 +185,5 @@ Quel est l'avantage principal d'un VPS par rapport à Vercel ou Railway ?
 
 ---
 
-**Voir le fichier 08-QUIZ-PRODUCTION-REPONSES.md pour les corrections**
+**Voir le fichier 09-QUIZ-PRODUCTION-REPONSES.md pour les corrections**
 

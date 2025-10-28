@@ -128,6 +128,6 @@
 - 36-40 : Excellente maîtrise du déploiement
 - 30-35 : Bonne compréhension
 - 24-29 : Compréhension satisfaisante
-- 18-23 : Relire modules 06-07
+- 18-23 : Relire modules 05 et 11
 - <18 : Révision complète nécessaire
 
